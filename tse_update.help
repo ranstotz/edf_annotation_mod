@@ -1,0 +1,21 @@
+name: tse_update
+synopsis: tse_update [options] file(s)
+descr: adds null data to time gaps in tse files
+
+options:
+ -odir: an output directory where files will be stored [default='.']
+ -rdirtse: a path that replaces the path of the .tse files
+ -rdiredf: a path that replaces the path of the .edf files
+ -channel: an option to express that tse files are channel based 
+ 	   if this option is not expressed, system assumes not channel 
+	   based.
+ -help: display this message
+
+arguments:
+ file(s): a file list(s) of .tse files
+
+examples:
+
+ updates tse files in list with respect to rdir's, channel based
+ tse_update -odir /xyz/abc -rdirtse /my/path -rdiredf /my/othpath \
+ -channel true mytsefiles.list

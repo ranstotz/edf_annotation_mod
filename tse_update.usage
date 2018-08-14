@@ -1,0 +1,3 @@
+Usage: 
+ tse_update -odir /xyz/abc -rdirtse /my/path -rdiredf /my/othpath \
+ -channel true mytsefiles.list
